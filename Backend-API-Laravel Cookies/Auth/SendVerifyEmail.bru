@@ -1,0 +1,15 @@
+meta {
+  name: SendVerifyEmail
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://{{base_url}}/api/send-verify-email
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

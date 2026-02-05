@@ -1,0 +1,26 @@
+meta {
+  name: Verify2FA
+  type: http
+  seq: 12
+}
+
+post {
+  url: http://{{base_url}}/api/2fa/verify
+  body: json
+  auth: inherit
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "one_time_password": "072992"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,29 @@
+meta {
+  name: Register
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://{{base_url}}/api/auth/register
+  body: json
+  auth: inherit
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+  Accept-Language: es
+}
+
+body:json {
+  {
+    "name": "Administrador",
+    "email": "admin@admin.es",
+    "password": "11111111"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

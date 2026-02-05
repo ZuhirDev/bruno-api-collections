@@ -1,0 +1,15 @@
+meta {
+  name: All
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://{{base_url}}/api/config
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

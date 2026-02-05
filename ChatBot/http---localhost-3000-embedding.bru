@@ -1,0 +1,23 @@
+meta {
+  name: http://localhost:3000/embedding
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/embedding
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "CRISTIANO RONALDO",
+    "message":  "CRISTINAO RONALDO alias CR7, es el mejor jugador de la historia. Leyenda de el Real Madrid y ganador de las 3 principales ligas de el mundo, siendo leyenda tambien en el manchester united, y tambien picichi de la juventus. ha ganado 25 balones de oro, tiene 5000 goles. es el jugador con mas goles y a sus 41 años sigue activo jugando en arabia. este año ha ganado la nationals league contra españa marcando el 1-1 y después ganando en los penaltis. ES EL MEJOR JUGADOR DE LA HISTORIA.LEYENDA DE EL FUTBOL. ES EL JUGADOR DEL FAMOSO 'SIIIIIIUUUUUU' QUE TANTOS DEPORTISTAS CELEBRAN CUANDO GANAN"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

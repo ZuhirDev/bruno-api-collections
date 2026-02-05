@@ -1,0 +1,26 @@
+meta {
+  name: VerifyEmail
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://localhost:85/api/verify-email?expires=1752861214&hash=479bf1728520f8099b954586cbdb273804809451&id=1&signature=a2600a15a925c44b2babe19daf89fea9e19ae9811cad46ab089c9c6e352a4bc9
+  body: none
+  auth: bearer
+}
+
+params:query {
+  expires: 1752861214
+  hash: 479bf1728520f8099b954586cbdb273804809451
+  id: 1
+  signature: a2600a15a925c44b2babe19daf89fea9e19ae9811cad46ab089c9c6e352a4bc9
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

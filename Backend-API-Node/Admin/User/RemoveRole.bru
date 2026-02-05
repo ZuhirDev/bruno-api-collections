@@ -1,0 +1,22 @@
+meta {
+  name: RemoveRole
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://{{base_url}}/api/user/remove-roles
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "userId": "68ce8b53d0c2d4b29dae179e",
+      "roleId": "68ce8b53d0c2d4b29dae179b"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

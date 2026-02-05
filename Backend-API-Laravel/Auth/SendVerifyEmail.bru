@@ -1,0 +1,19 @@
+meta {
+  name: SendVerifyEmail
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://{{base_url}}/api/send-verify-email
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

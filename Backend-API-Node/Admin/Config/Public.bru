@@ -1,0 +1,22 @@
+meta {
+  name: Public
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://{{base_url}}/api/config/public
+  body: text
+  auth: inherit
+}
+
+body:text {
+  {
+      "id": "6932f73e57b1841ca666d5cd",
+      "value": true
+  }
+}
+
+settings {
+  encodeUrl: true
+}

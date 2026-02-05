@@ -1,0 +1,30 @@
+meta {
+  name: Verify2FA
+  type: http
+  seq: 11
+}
+
+post {
+  url: http://{{base_url}}/api/2fa/verify
+  body: json
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "one_time_password": "003574"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

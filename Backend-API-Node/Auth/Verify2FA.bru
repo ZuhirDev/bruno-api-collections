@@ -1,0 +1,27 @@
+meta {
+  name: Verify2FA
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://{{base_url}}/api/auth/2fa/verify
+  body: json
+  auth: inherit
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "otp": "827216"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

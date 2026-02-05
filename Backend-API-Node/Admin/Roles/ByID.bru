@@ -1,0 +1,16 @@
+meta {
+  name: ByID
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://{{base_url}}/api/roles/62b043ac-a7ac-4101-bd7c-e22b8a038555
+  body: text
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

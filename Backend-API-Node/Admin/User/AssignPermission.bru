@@ -1,0 +1,22 @@
+meta {
+  name: AssignPermission
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://{{base_url}}/api/user/assign-permissions
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "userId": "68ce8b53d0c2d4b29dae179e",
+      "permissionId": "68ceaaab7249f0cceedd8acb"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

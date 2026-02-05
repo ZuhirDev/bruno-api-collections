@@ -1,0 +1,31 @@
+meta {
+  name: Enable2FA
+  type: http
+  seq: 10
+}
+
+post {
+  url: http://{{base_url}}/api/2fa/enable
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+  Accept-Language: es
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "password": "11111111"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

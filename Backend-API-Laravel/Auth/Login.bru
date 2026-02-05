@@ -1,0 +1,29 @@
+meta {
+  name: Login
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://{{base_url}}/api/login
+  body: json
+  auth: inherit
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+  Accept-Language: es
+}
+
+body:json {
+  
+  {
+      "email": "admin@admin.es",
+      "password": "11111111"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

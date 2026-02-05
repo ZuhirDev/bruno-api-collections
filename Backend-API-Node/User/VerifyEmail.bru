@@ -1,0 +1,22 @@
+meta {
+  name: VerifyEmail
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:85/api/users/verify-email?expires=1767972288705&token=8ce4133b4c422fe59ca9c02ad6c111827331493ccd893dc408e9e01fedb15563&id=42147387-d398-4a09-b98d-729aee40e0e7
+  body: none
+  auth: none
+}
+
+params:query {
+  expires: 1767972288705
+  token: 8ce4133b4c422fe59ca9c02ad6c111827331493ccd893dc408e9e01fedb15563
+  id: 42147387-d398-4a09-b98d-729aee40e0e7
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

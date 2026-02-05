@@ -1,0 +1,23 @@
+meta {
+  name: Update
+  type: http
+  seq: 2
+}
+
+patch {
+  url: http://{{base_url}}/api/permissions
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "id": "3ece553e-5f79-44df-8bd3-21cc902be85e",
+      "description": "uuuhhhiiiiyyy"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

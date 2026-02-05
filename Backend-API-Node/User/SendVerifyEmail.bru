@@ -1,0 +1,22 @@
+meta {
+  name: SendVerifyEmail
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://{{base_url}}/api/users/send-verify-email
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "id": "42147387-d398-4a09-b98d-729aee40e0e7"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,29 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://{{base_url}}/api/permissions
+  body: json
+  auth: inherit
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+}
+
+body:json {
+    { "name": "create", "resource": "manage_rhlm" }
+  //   { "name": "read", "resource": "manage_roles" }
+  //   { "name": "update", "resource": "manage_roles" }
+  //   { "name": "delete", "resource": "manage_roles" }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Update
+  type: http
+  seq: 2
+}
+
+patch {
+  url: http://{{base_url}}/api/config
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "id": "52604e06-ee5d-4c9c-bd24-7f51efa5bab1",
+      "value": true,
+      "isPublic": true
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Me
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://{{base_url}}/api/me
+  body: none
+  auth: bearer
+}
+
+headers {
+  Accept-Language: es
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

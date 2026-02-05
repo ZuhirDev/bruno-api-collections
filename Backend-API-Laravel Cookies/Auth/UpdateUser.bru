@@ -1,0 +1,25 @@
+meta {
+  name: UpdateUser
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://{{base_url}}/api/update
+  body: json
+  auth: inherit
+}
+
+headers {
+  Accept-Language: es
+}
+
+body:json {
+  {
+      "name": "Administrador"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

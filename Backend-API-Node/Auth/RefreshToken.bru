@@ -1,0 +1,15 @@
+meta {
+  name: RefreshToken
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://{{base_url}}/api/refresh-token
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

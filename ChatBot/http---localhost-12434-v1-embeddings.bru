@@ -1,0 +1,23 @@
+meta {
+  name: http://localhost:12434/v1/embeddings
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:12434/v1/embeddings
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "input": ["Esto es un ejemplo de texto para embedding"],
+    "model": "ai/mxbai-embed-large"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

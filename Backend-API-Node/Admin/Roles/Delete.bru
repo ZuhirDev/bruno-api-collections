@@ -1,0 +1,16 @@
+meta {
+  name: Delete
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://{{base_url}}/api/roles/40ad027d-ebbf-409a-9ee3-6c761957a252
+  body: text
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

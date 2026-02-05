@@ -1,0 +1,24 @@
+meta {
+  name: DeletePermission
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://{{base_url}}/api/roles/remove-permission
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "id": "40ad027d-ebbf-409a-9ee3-6c761957a252",
+      "permissionIds": ["090a324a-bced-46df-ab8d-630e880a3d6d"]
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
