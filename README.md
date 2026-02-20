@@ -1,33 +1,32 @@
 # 🧪 Bruno API Collections
 
-Repositorio centralizado para almacenar y versionar colecciones de pruebas de API creadas con **Bruno**.
+Centralized repository for storing and versioning API test collections created with **Bruno**.
 
 ---
 
-## 📋 Descripción
+## 📋 Description
 
-Este repositorio contiene colecciones de requests y configuraciones de prueba para APIs.  
-Su objetivo es servir como **almacenamiento centralizado**, manteniendo las pruebas organizadas, reutilizables y versionadas.
-
----
-
-## 📂 Contenido y estructura
-
-- Colecciones de Bruno (`.bru`)  
-- Configuraciones y archivos de entorno (`.json`)  
-- Directorios organizados por contexto, proyecto o propósito
-
-El repositorio está estructurado para que sea **fácil de navegar, mantener y reutilizar**.
+This repository contains collections of requests and test configurations for APIs.  
+Its purpose is to serve as a **centralized storage**, keeping tests organized, reusable, and versioned.
 
 ---
 
-## 🔗 Repositorios relacionados
+## 📂 Content and Structure
 
-Aquí se encuentran los proyectos cuyas APIs están siendo probadas con estas colecciones:
+- Bruno collections (`.bru`)  
+- Configuration and environment files (`.json`)  
+- Directories organized by context, project, or purpose
 
-| Proyecto | Enlace |
-|----------|--------|
-| Backend API Laravel | [Ver repo](https://github.com/ZuhirDev/Backend-API-Laravel) |
-| Backend API Laravel Cookies | [Ver repo](https://github.com/ZuhirDev/Backend-API-Laravel) |
-| Backend API Node | [Ver repo](https://github.com/ZuhirDev/auth-starter-kit-node) |
-| ChatBot | [Ver repo](https://github.com/ZuhirDev/ChatBot) |
+The repository is structured to be **easy to navigate, maintain, and reuse**.
+
+---
+
+## 🔗 Related Repositories
+
+Here are the projects whose APIs are being tested with these collections:
+
+| Project                       | Link |
+|-------------------------------|------|
+| Backend API Laravel            | [View repo](https://github.com/ZuhirDev/Backend-API-Laravel) |
+| Backend API Node               | [View repo](https://github.com/ZuhirDev/auth-starter-kit-node) |
+| ChatBot                        | [View repo](https://github.com/ZuhirDev/ChatBot) |
